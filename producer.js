@@ -1,7 +1,7 @@
 import amqp from 'amqplib'
 import { rabbitMQ } from './config';
 
-class Producer {
+export class Producer {
     channel;
 
     async createChannel () {
@@ -30,8 +30,4 @@ class Producer {
 
         console.log(`The message ${message} is sent to exchange ${rabbitMQ.exchangeName}`)
     }
-}
-
-export {
-    Producer
 }
