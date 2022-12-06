@@ -9,3 +9,9 @@ services:
     volumes:
         - ./rabbitmq/data/:/var/lib/rabbitmq/
         - ./rabbitmq/log/:/var/log/rabbitmq/
+  app:
+    build: .
+    container_name: loggerMS
+    volumes:
+      - .:/usr/app
+    network_mode: host

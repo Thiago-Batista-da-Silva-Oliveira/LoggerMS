@@ -1,5 +1,5 @@
 import amqp from 'amqplib'
-import { rabbitMQ } from './config';
+import { rabbitMQ } from './config.js';
 
 export class Producer {
     channel;

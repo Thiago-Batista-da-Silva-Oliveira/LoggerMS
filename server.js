@@ -1,6 +1,6 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-import { Producer } from './producer'
+import { Producer } from './producer.js'
 
 const app = express()
 
